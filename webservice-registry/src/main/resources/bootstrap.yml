@@ -12,3 +12,8 @@ spring:
   cloud:
      config:
         uri: http://configserver:8888
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
