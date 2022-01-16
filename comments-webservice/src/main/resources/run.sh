@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SPRING_ACTIVE_PROFILE=${SPRING_ACTIVE_PROFILE:-"local-docker"}
+SPRING_ACTIVE_PROFILE=${SPRING_ACTIVE_PROFILE:-"docker"}
 GIT_BRANCH_LABEL=${GIT_BRANCH_LABEL:-"master"}
 
 # The environment variables are already set up by the Dockerfile
