@@ -22,7 +22,7 @@ services:
     mem_limit: 1073741824
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "curl", "-I", "http://configserver:8888"]
+      test: ["CMD", "curl", "-I", "http://config-server:8888"]
       interval: 5s
       timeout: 3s
       retries: 5
@@ -38,7 +38,7 @@ services:
     hostname: eureka-registry
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://eurekaregistry:8761"]
+      test: ["CMD", "curl", "-f", "http://eureka-registry:8761"]
       interval: 5s
       timeout: 3s
       retries: 10
